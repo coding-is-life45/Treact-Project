@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/*
+
+GENERICS
+
+*/
+ul {
+  display: flex;
+  align-items: baseline;
+}
+
+nav {
+  padding: 32px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #3c0d99;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+
+NAVIGATION 
+
+*/
+
+.nav__links {
+  font-size: 48px;
+}
+
+.nav__link {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 0 0 4px;
+  margin: 0 48px 0 0;
+  transition: all 450ms ease;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid black;
+}
+
+.nav__link--primary {
+  padding: 12px 24px;
+  background-color: #6415ff;
+  color: #f7fafc;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 450ms ease;
+}
+
+.nav__link--primary:hover {
+  background-color: #3c0d99;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo--container {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo--container,
+.nav__link,
+.nav__link--primary {
+  cursor: pointer;
+}
+
+.nav__img {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #243e63;
+  transition: all 450ms ease;
+}
+
+.nav__logo:hover {
+  color: #6415ff;
+}
+
+.nav__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER */
+
+.update-notice {
+  padding: 16px 20px;
+  margin: 32px 0;
+}
+
+.header__container {
+  display: flex;
+  margin: 0 16px;
+}
+
+.header__description,
+.header__features {
+  margin-top: 24px;
+}
+
+.header__description {
+  line-height: 1.5;
+}
+
+.header__features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 2;
+  width: 100%;
+  max-width: 576px;
+  
+}
+
+.header__row,
+.img__container {
+  width: 50%;
+}
+
+.img__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__feature {
+  font-size: 18px;
+  margin-right: 16px;
+justify-content: flex-start;
+ }
