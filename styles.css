@@ -21,9 +21,6 @@ nav {
   padding: 32px;
 }
 
-li {
-  list-style-type: none;
-}
 
 .row {
   width: 100%;
@@ -40,6 +37,18 @@ h1 {
 img {
   width: 100%;
   height: auto;
+}
+
+li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+svg {
+  padding: 4px;
+  align-items: center;
+  color: #6415ff;
 }
 
 /* 
@@ -123,6 +132,14 @@ NAVIGATION
 .update-notice {
   padding: 16px 20px;
   margin: 32px 0;
+  display: flex;
+  color: #9c4221;
+  background-color: #fffaf0;
+}
+
+.wifi-symbol {
+  color: #9c4221;
+  align-items: center;
 }
 
 .header__container {
@@ -146,7 +163,6 @@ NAVIGATION
   line-height: 2;
   width: 100%;
   max-width: 576px;
-  
 }
 
 .header__row,
@@ -161,8 +177,52 @@ NAVIGATION
   justify-content: center;
 }
 
+.header__feature--left, .header__feature--right {
+  width: 50%;
+}
+
 .header__feature {
   font-size: 18px;
   margin-right: 16px;
-justify-content: flex-start;
- }
+  
+}
+
+.header__feature--description {
+  margin-left: 8px;
+}
+
+.demos,
+.components {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 450ms ease;
+}
+
+.components {
+  background-color: #e2e8f0;
+}
+
+.components:hover {
+  background-color: #cbd5e0;
+}
+
+.demos {
+  background-color: #6415ff;
+  color: #f7fafc;
+  margin-right: 36px;
+}
+
+.demos:hover {
+  background-color: #3c0d99;
+}
+
+.buttons {
+  margin: 24px 36px 0 0;
+  display: flex;
+
+}
