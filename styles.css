@@ -226,3 +226,49 @@ NAVIGATION
   display: flex;
 
 }
+
+
+/* HERO SECTION */
+
+
+  
+.hero-section__title {
+  display: inline-block;
+  margin: 48px 32px;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #6415ff;
+  border-bottom: 4px solid #6415ff;
+}
+
+.hero-section__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 20px 32px;
+}
+
+.hero-illustration {
+  font-size: 18px;
+}
+
+.hero-demo {
+  color: #6415ff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.demo-arrow {
+  width: 25px;
+  height: 25px;
+}
+
+.hero-section__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
