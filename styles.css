@@ -51,6 +51,10 @@ svg {
   color: #6415ff;
 }
 
+.purple {
+  color: #6415ff;
+}
+
 /* 
 
 NAVIGATION 
@@ -72,7 +76,7 @@ NAVIGATION
   border-bottom: 2px solid black;
 }
 
-.nav__link--primary {
+.nav__link--primary, .hero-section__nav-link--primary {
   padding: 12px 24px;
   background-color: #6415ff;
   color: #f7fafc;
@@ -81,7 +85,7 @@ NAVIGATION
   transition: all 450ms ease;
 }
 
-.nav__link--primary:hover {
+.nav__link--primary:hover, .hero-section__nav-link--primary:hover{
   background-color: #3c0d99;
 }
 
@@ -272,13 +276,14 @@ NAVIGATION
   margin: 0 32px;
   padding: 24px 32px;
   border: 1px solid gray;
-  border-radius: 0 0 8px 8px;
+  border-bottom: none;
 }
 
 .hero-section__nav--logo-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .hero-section__nav--links {
   font-size: 14px;
@@ -289,7 +294,10 @@ NAVIGATION
 .hero-section__nav-link {
   padding: 0 0 4px;
   margin: 0 48px 0 0;
-  transition:  450ms ease ;
+  border-bottom: 2px solid white;
+  transition:  all 450ms ease ;
+  
+
 }
 
 .hero-section__nav--logo:hover {
@@ -299,6 +307,11 @@ NAVIGATION
 .hero-section__nav-link:hover {
   border-bottom: 2px solid #6415ff;
   color: #6415ff;
+ 
+}
+
+.hero-section__nav-link--login {
+  margin-bottom: 0;
 }
 
 
@@ -309,4 +322,32 @@ NAVIGATION
 
 .sign-up__links {
   display: flex;
+  align-items: center;
+}
+
+.react-container {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+  margin: 0 32px;
+}
+
+.react-templates {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 24px 32px;
+}
+
+.react__img--wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-img {
+  width: 100%;
+  max-width: 500px;
 }
