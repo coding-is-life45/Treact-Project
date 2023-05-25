@@ -156,17 +156,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="react-container">
-                        <div class="react-templates">
-                            <h2>Beautiful React Templates <span class="purple">for you.</span></h2>
-                            <p>Our templates are easy to setup, understand and customize. Fully modular components with
+                    <div class="react__container">
+                        <div class="react__templates">
+                            <h2 class="react__templates--header">Beautiful React Templates <span class="purple">for you.</span></h2>
+                            <p class="react__templates--description">Our templates are easy to setup, understand and customize. Fully modular components with
                                 a
                                 variety of pages and components.</p>
-                            <input type="email">
-                            <button>Get Started</button>
+                                <form action="">
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                            <button class="email-signup">Get Started</button>
+                        </form>
+                        <div class="trusted-customers">
+                            <h3 class="trusted-customers__header">OUR TRUSTED CUSTOMERS</h3>
+                            <img class="trusted__img" src="fortune.png" alt="">
                         </div>
-                        <div class="trusted-customers"></div>
-                        <figure class="react__img--wrapper"><img src="react-template img.svg" class="react-img" alt=""></figure>
+                        </div>
+                        <figure class="react__img--wrapper"><img src="react-template img.svg" class="react-img" alt="">
+                        </figure>
                     </div>
                 </div>
         </section>
