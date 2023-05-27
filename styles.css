@@ -56,7 +56,8 @@ svg {
 }
 form {
   position: relative;
-  margin-top: 32px;
+  margin: 32px 0;
+  border-color: rgb(226, 232, 240);
 }
 
 /* 
@@ -250,7 +251,7 @@ NAVIGATION
   border-bottom: 4px solid #6415ff;
 }
 
-.hero-section__header {
+.hero-section__header, .amazing-section--header, .amazing__container {
   display: flex;
   justify-content: space-between;
   margin: 0 32px;
@@ -259,11 +260,11 @@ NAVIGATION
   padding: 20px 32px;
 }
 
-.hero-illustration {
+.hero-illustration, .amazing-illustration {
   font-size: 18px;
 }
 
-.hero-demo {
+.demo {
   color: #6415ff;
   font-weight: 700;
   display: flex;
@@ -273,6 +274,7 @@ NAVIGATION
 .demo-arrow {
   width: 25px;
   height: 25px;
+  align-items: center;
 }
 
 .hero-section__nav {
@@ -378,12 +380,17 @@ NAVIGATION
   font-weight: 700;
   border: none;
   cursor: pointer;
+  transition: all 450ms ease;
+}
+
+.email-signup:hover {
+background-color: #3c0d99;
 }
 
 
 #email {
   border-radius: 50px;
-  padding: 24px 0;
+  padding: 24px 192px 24px 24px;
   border-width: 2px;
   width: 100%;
   font-size: 16px;
@@ -402,11 +409,73 @@ NAVIGATION
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 60px;
+  margin: 60px 0;
   color: rgb(143, 147, 151);
 }
 
 
-.trusted__img {
-  background-repeat: no-repeat;
+
+
+
+/* SERVICES */
+
+.centered {
+ margin: 0 auto;
+}
+
+.amazing__container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+
+}
+
+.amazing__container--title {
+padding: 32px 0 16px 0;
+font-size: 48px;
+}
+
+.amazing__container--description {
+  width: 100%;
+  max-width: 750px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(124 139 161);
+  text-align: center;
+}
+
+.services {
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.service__header {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.service__img{
+  width: 1.625rem;
+  height: 1.625rem;
+  /* padding: 20px; */
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.service__description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  color: rgb(124 139 161);
 }
