@@ -101,7 +101,18 @@ NAVIGATION
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
+
+ #amazing {
+  margin-top: 20px;
+}
+
+#pricing {
+  margin-top: 40px;
+ 
+}
+
 
 .nav__logo--container, .footer--img__container {
   display: flex;
@@ -259,10 +270,9 @@ NAVIGATION
 .amazing__container,
 .pricing__container,
 .pricing-section--header {
-.hero-section__header, .amazing-section--header, .amazing__container, .pricing__container, .pricing-section--header {
   display: flex;
   justify-content: space-between;
-  margin: 0 32px;
+  margin: 0 auto;
   border: 1px solid gray;
   border-radius: 8px 8px 0 0;
   padding: 20px 32px;
@@ -271,7 +281,6 @@ NAVIGATION
 .hero-illustration,
 .amazing-illustration,
 .pricing-illustration {
-.hero-illustration, .amazing-illustration, .pricing-illustration {
   font-size: 18px;
 }
 
@@ -292,7 +301,7 @@ NAVIGATION
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 32px;
+  margin: 0 auto;
   padding: 24px 32px;
   border: 1px solid gray;
   border-bottom: none;
@@ -344,7 +353,7 @@ NAVIGATION
   border: 1px solid gray;
   border-radius: 0 0 8px 8px;
   border-top: none;
-  margin: 0 32px 16px 32px;
+  margin: 0 auto 16px auto;
 }
 
 .react__templates {
@@ -482,15 +491,7 @@ NAVIGATION
   height: 4rem;
   border-radius: 50%;
   border: 1px solid lightgray;
-  padding: 18px;
-.service__img{
-  box-sizing: border-box;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    border: 1px solid  lightgray;
-    padding: 18px;
-    
+  padding: 18px;  
 }
 
 .service__description {
@@ -516,7 +517,7 @@ NAVIGATION
 
 /* PRICING PLANS */
 
-.plan--description__container {
+.plan--description__container,
 .plan__container {
   padding-top: 80px;
   display: flex;
@@ -524,24 +525,22 @@ NAVIGATION
   justify-content: center;
   align-items: center;
   border: 1px solid gray;
-  margin: 0 32px;
+  margin: 0 auto;
 }
 
 .plan__container {
   height: 100%;
-  height: 650px;
- 
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border: 1px solid gray;
+  flex-wrap: nowrap;
+  border-radius: 0 0 8px 8px;
 }
 
 .pricing--header__small {
   padding-bottom: 24px;
 }
 
-.pricing__header {
-  
-}
+
 
 .pricing__header{
   font-size: 48px;
@@ -560,18 +559,13 @@ NAVIGATION
 .plans {
   display: flex;
   height: 100%;
-  margin: 0 auto;
-  max-width: 1100px;
+  margin: 0 25px;
   color: #7C8BA1;
-  margin: 24px 0;
+  margin: 24px auto;
   font-weight: 500;
   font-size: 16px;
+}
 
-}
-.plans {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .plan {
   width: calc(100% / 3);
@@ -585,6 +579,9 @@ NAVIGATION
   flex-wrap: nowrap;
   margin-right: 2rem;
 }
+
+
+
 .plan__type {
   margin: 0 auto;
   text-align: center;
@@ -593,7 +590,7 @@ NAVIGATION
 .plan--type__header {
   padding: 48px 0 16px 0;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .plan:nth-child(2) {
@@ -632,6 +629,12 @@ NAVIGATION
   padding-top: 20px;
 }
 
+.plan--features__header:nth-of-type(1) {
+  line-height: normal;
+ white-space: nowrap;
+ padding: 0 10px;
+}
+
 .plan--features__list li:nth-child(5){
   padding-bottom: 24px;
 }
@@ -649,14 +652,17 @@ NAVIGATION
 .plan--features__header {
   font-weight: 700;
   font-size: 20px;
+  text-align: c;
 }
 .spacing {
   line-height: 3;
 }
+ 
 
 .buy--now__container {
   display: flex;
   flex-wrap: nowrap;
+  height: 150px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -671,7 +677,7 @@ NAVIGATION
  top: 28px;
  left: 85px;
  font-weight: 800;
- position: absolute;
+ /* position: absolute; */
  border-radius: 50px;
  width: 65%;
  display: inline-block;
@@ -688,7 +694,7 @@ footer {
   background-color: #6415ff;
   color: white;
   position: relative;
-  margin: 80px 35px 15px 50px;
+  margin: 80px 35px 15px 15px;
   overflow: hidden;
 }
 
@@ -747,6 +753,14 @@ footer::after {
   font-size: 16px;
 }
 
+.footer__hover  {
+  transition: all 4500ms ease;
+}
+
+.footer__hover:hover {
+text-decoration: underline;
+}
+
 .footer__info {
   display: flex;
   align-items: center;
@@ -775,19 +789,27 @@ footer::after {
  flex-wrap: nowrap;
  justify-content: center;
  align-items: center;
+ border: none;
 }
 
 .social {
   padding: 0 10px;
-}
-
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
-}
-
-.plan__type {
+ 
 
 }
 
-.plan__features {}
+@media (max-width: 728px) {
+  .container {
+    padding:  10px;
+    max-width: 350px;
+  }
+  .nav__link {
+    white-space: nowrap;
+  }
+  .nav__link:nth-child(odd) {
+    display: none;
+  }
+}
+
