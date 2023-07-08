@@ -103,6 +103,9 @@ NAVIGATION
   align-items: center;
  
 }
+.btn__menu {
+  display: none;
+}
 
  #amazing {
   margin-top: 20px;
@@ -354,6 +357,7 @@ NAVIGATION
   border-radius: 0 0 8px 8px;
   border-top: none;
   margin: 0 auto 16px auto;
+  flex-direction: column;
 }
 
 .react__templates {
@@ -371,7 +375,7 @@ NAVIGATION
 }
 
 .react-img {
-  width: 100%;
+  /* width: 100%; */
   max-width: 500px;
 }
 
@@ -409,12 +413,11 @@ NAVIGATION
 #email {
   border-radius: 50px;
   padding: 24px 192px 24px 24px;
-  border-width: 2px;
+  border: 2px solid rgb(226, 232, 240);
   width: 100%;
   font-size: 16px;
   padding-left: 20px;
   color: rgb(226, 232, 240);
-  border-color: rgb(226, 232, 240);
 }
 
 .trusted-customers__header {
@@ -468,7 +471,6 @@ NAVIGATION
 .service {
   display: flex;
   width: calc(100% / 3);
-  
 }
 
 .service:nth-child(-n + 3) {
@@ -887,6 +889,108 @@ text-decoration: underline;
 
 .responsive--header__img {
   width: 650px;
+}
+
+.hero-section__nav--links {
+  display: none;
+}
+
+.nav__row {
+  display: flex;
+  flex-direction: row;
+}
+.btn__menu{
+  font-size: 20px;
+  border: none;
+  color: #6415ff;
+}
+
+.react__container {
+  position: relative;
+}
+
+.react__templates {
+  width: 100%;
+}
+
+.react__templates--header{
+  font-size: 32px;
+  white-space: nowrap;
+  margin:  25px 0 25px 20px 45px;
+}
+
+.react__templates--description{
+  min-width: 550px;
+  text-align: center;
+}
+
+.react__img--wrapper {
+  width: 100%;
+}
+
+#email {
+ position: unset;
+  min-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+  transition: all 450ms ease;
+}
+
+#email:hover {
+border: 2px solid rgb(137, 138, 141)
+}
+
+.email-signup {
+  position: unset;
+  min-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trusted-customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  left: 50%;
+}
+
+.amazing__container--title {
+  font-size: 32px;
+}
+
+.amazing__container--description {
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.service{
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+.service__header {
+  text-align: center;
+}
+
+.service__img {
+  display: none;
+}
+
+.service__spacing {
+  padding-bottom: 40px;
+}
+
+.pricing__header {
+font-size: 36px;
+}
+
+.pricing__description {
+  font-size: 14px;
+  text-align: center;
 }
   
 }
